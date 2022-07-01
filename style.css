@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.centered {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 400px;
+    height: 200px;
+    background-color: #caca;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+/* applause card */
+.applause-play, .scream-play {
+    border-radius: 10px;
+}
+.applause-play i, .scream-play {
+    font-size: 40px;
+    margin: 10px;
+}
+.applause-play.playing .play-icon {
+    display: none;
+}
+.applause-play.stopped .pause-icon {
+    display: none;
+}
+/* scream card */
+.scream-play i, .scream-play {
+    font-size: 40px;
+    margin: 10px;
+}
+.scream-play.playing .play-icon {
+    display: none;
+}
+.scream-play.stopped .pause-icon {
+    display: none;
+}
+.card .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
